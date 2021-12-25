@@ -1,0 +1,32 @@
+{
+  "name": "monorepo-node-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build -workspaces",
+    "build-core": "npm run build -w @packages/core",
+    "build-logger": "npm run build -w @packages/logger",
+    "server-dev": "npm run build-core && npm run build-logger && npm run start -w @packages/server",
+    "test": "npm run test -workspaces"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "@packages\\core",
+    "@packages\\logger",
+    "@packages\\server"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "@babel/preset-typescript": "^7.16.5",
+    "@types/jest": "^27.0.3",
+    "cross-env": "^7.0.3",
+    "jest": "^27.4.5",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  }
+}
