@@ -1,4 +1,11 @@
-# Mono-Repo for Note Application
+# Mono-Repo for Node.js Application
+
+## Setup
+
+| Info        | Description                   |
+| ----------- | ----------------------------- |
+| Language    | [TypeScript][typescript-docs] |
+| Test Runner | [Jest][jest-docs]             |
 
 ## Package Management
 
@@ -45,3 +52,5 @@ npm run test --workspaces --if-present
 ```
 
 [npm-workspaces-docs]: [https://docs.npmjs.com/cli/v8/using-npm/workspaces]
+[typescript-docs]: https://typescriptlang.org/docs
+[jest-docs]: https://jestjs.io/docs/getting-started
